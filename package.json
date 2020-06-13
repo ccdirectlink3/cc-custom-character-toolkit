@@ -1,8 +1,9 @@
 {
-	"name": "party-player",
-	"version": "1.0.0",
-	"description": "Add Characters as Party or Players",
-	"module": true,
-	"postload" : "postload.js",
-	"main": "poststart.js"
+    "name": "custom-character-toolkit",
+    "version": "1.0.0",
+    "ccmodHumanName": "Custom Character Toolkit",
+    "description": "Helps other mods in adding custom characters or replacing existing ones",
+    "module": true,
+    "postload": "postload.js",
+    "main": "poststart.js"
 }
