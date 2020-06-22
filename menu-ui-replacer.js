@@ -126,19 +126,19 @@ ig.module('menu-ui-replacer.map-menu')
         sc.MapFloorButtonContainer.inject({
             originalCopy: null,
 
-            init(...args) {
-                this.parent(...args);
+            init() {
+                this.parent(...arguments);
                 this.leaIconOriginal = this.leaIcon;
                 this._updateLeaIcon();
             },
 
-            addObservers(...args) {
-                this.parent(...args);
+            addObservers() {
+                this.parent(...arguments);
                 sc.Model.addObserver(sc.model.player, this);
             },
 
-            removeObservers(...args) {
-                this.parent(...args);
+            removeObservers() {
+                this.parent(...arguments);
                 sc.Model.removeObserver(sc.model.player, this);
             },
 
@@ -186,13 +186,13 @@ ig.module('menu-ui-replacer.social-menu')
                 this.insertChildGui(newLeader);
             },
 
-            show(...args) {
-                this.parent(...args);
+            show() {
+                this.parent(...arguments);
                 this.isHidden = false;
             },
 
-            hide(...args) {
-                this.parent(...args);
+            hide() {
+                this.parent(...arguments);
                 this.isHidden = true;
             },
         });
