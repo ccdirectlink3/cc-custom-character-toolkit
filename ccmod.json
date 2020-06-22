@@ -1,0 +1,8 @@
+{
+  "id": "custom-character-toolkit",
+  "version": "1.0.0",
+  "title": "Custom Character Toolkit",
+  "description": "Helps other mods in adding custom characters or replacing existing ones",
+  "postload": "postload.js",
+  "poststart": "poststart.js"
+}

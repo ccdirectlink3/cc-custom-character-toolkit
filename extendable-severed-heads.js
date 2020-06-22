@@ -44,9 +44,7 @@ ig.module('extendable-severed-heads')
                 if (!(success && loadable === this.loadCollector)) return;
 
                 if (this.baseImage.failed) return;
-                for (const img of this.customImages) {
-                    if (img.failed) return;
-                }
+                if (this.customImages.some(img => img.failed)) return;
 
                 this._assignCustomIndexes();
                 this._patchBaseImage();
